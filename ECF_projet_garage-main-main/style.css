@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: rgb(166, 191, 221);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:90px;
+}
+
+
+.logo {
+    width: 225px;
+    height: 75px;
+}
+
+nav {
+    z-index: 2;
+    background: white;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+}
+
+nav ul {
+
+    float: right;
+    margin-right: 20px;
+    margin: 25px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 0 5px;
+    font-size: xx-large;
+    padding-inline: 10px;
+    color:rgba(209, 14, 108, 0.975);
+}
+nav ul li :hover {
+    color: #112db7;
+}
+nav ul li :active {
+    color:black;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+}
+
+footer {
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    background: white;
+    height: 50px;
+    font-size: larger;
+    text-align: center;
+    padding-top: 12px;
+    position: fixed;
+}
+
+.filter {
+    top: 75px;
+    display: block;
+    width: 17%;
+    background: rgb(218, 229, 230);
+    height: 94%;
+    position: fixed;
+    text-align: center;
+    font-weight: bold;
+}
+
+.filter h3 {
+    color: darkslategrey;
+    line-height: 70px;
+    font-size: larger;
+    background: rgb(218, 229, 230);
+}
+
+aside datalist option {
+    padding: 10%;
+}
+
+.price-cursor,
+.kilometer-cursor,
+.date-cursor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#priceDisplay,
+#kilometerDisplay,
+#dateDisplay {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.marque_slc {
+    padding: 10px;
+}
+
+.objet_voiture {
+
+    border: solid rgb(10, 72, 105) 2px;
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.image_auto {
+    border: solid rgb(10, 72, 105) 1px;
+    width: 100%;
+    height: 70%;
+}
+
+.vignette {
+    text-transform: uppercase;
+}
+
+.zone_vignette {
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    max-width: 50%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.zoneaff {
+    margin-top: 75px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin-left: 8%;
+    max-width: 100%;
+
+}
+.lien{
+    background: rgb(37, 137, 203) ;
+    color: white;
+    
+    
+}
+
+.infos {
+    margin-top: 2%;
+}
+
+content {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    background: rgb(218, 229, 230);
+    width: 250px;
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.btn1 {
+    background: greenyellow;
+    width: 30px;
+}
+
+.btn2 {
+    background: red;
+    width: 30px;
+}
+
+.icon{
+ display: none;
+ font-size: 22px;
+ cursor: pointer;
+}
+
+.icon.cancel-btn{
+    position:absolute;
+    right: 30px;
+    top: 20px;
+}
+#click{
+    display: none;
+}
+
+/*version mobile*/
+
+@media (max-width: 1250px) {
+   
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: -1;
+        width: 100%;
+        padding: 0 30px;
+        color: #1b1b1b;
+        margin-bottom: 60px;
+    }
+
+    .content div {
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .filter {
+        top: 75px;
+        display: block;
+        width: 8%;
+        background: rgb(218, 229, 230);
+        height: 94%;
+        position: fixed;
+        text-align: center;
+        font-weight: bold;
+    
+    .objet_voiture {
+        
+        border: solid rgb(10, 72, 105) 2px;
+        width: 500px;
+        height: 450px;
+        border-radius: 10px;
+    }
+    
+    .zone_vignette {
+        margin-top: 20px;
+        padding: 5px;
+        display: flex;
+        max-width: 50%;
+        height: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+}
+@media (max-width: 1040px) {
+    .filter {
+        top: 75px;
+        display: block;
+        width: 24%;
+        background: rgb(218, 229, 230);
+        height: 94%;
+        position: fixed;
+        text-align: center;
+        font-weight: bold;
+    }
+}
